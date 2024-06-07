@@ -4,7 +4,8 @@ RUN mkdir -p /app
 WORKDIR /app
 ADD . /app/
 
-RUN bun install
+RUN npm install -g bun
+RUN bun install --frozen-lockfile
 # RUN npm run test
 
 # RUN npm install -g pm2
