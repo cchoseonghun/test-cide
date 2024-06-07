@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  test-cicd:
+     image: seonghun_cicd_test
+     volumes:
+          - ./deploy:/deploy/linking
+     ports:
+          - "3333:3333"
